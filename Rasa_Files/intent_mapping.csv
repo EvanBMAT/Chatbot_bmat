@@ -1,0 +1,34 @@
+AccountSettingsLanguage;How can I change the language settings ?
+AccountSettingsAccessAPI;Where can I find my API number ?
+AccountSettingsTimezone;I want to change my timezone
+UploadCatalogue;I wish to upload my catalogue to Vericast
+AddingNewChannel;I want to add a channel to Vericast
+ReplaceChannel;I want to replace a channel
+TypesOfAudioVideo;What are the different types of media that can be recorded ?
+AccountSettingsOrderOfTracks;I want to change my tracks sorting
+WantToKnowMoreAboutAPI;I want to know more about API functionalities
+AccessPreferences;Where can I access my Vericast preferences ?
+TechnicalRequirements;Which Browser is compatible with Vericast
+DownloadReport;How can I download/export my report ?
+TechnologyAlgorithmFunctionning;How does our fingerprinting technology work ?
+ContentFilter;How to filter by media type
+DurationFilter;How to filter by duration
+contactTheSupportTeam;I want to contact the support team
+CalendarIngestion;Tracks are not available after upload
+AnalysingReport;How should I read my report
+BmatidMeaning;What is Bmatid ?
+BmatDownloads;Where can I access all my reports ?
+SameArtistDifferentName;An artist name or a title seems incorrect
+ChartsService;I want to subscribe to the charts service
+BlankLabel;A track has a no label information
+WrongLabel;A song has an incorrect label
+MissingTrackReport;A track is missing in the report
+DuplicateTracks;The database contains twice the same track with different names
+UpdateLabel;I want to update a label name
+NoRecordingsChannel;Recordings are missing for a channel
+PresentationFCF;What is FCF ?
+EditFCF;How to edit FCF found tracks
+MonitoringVenues;How to monitor songs in bars, disco, clubs and public venues ?
+greet;Hi
+goodbye;bye
+thankyou;Thank you

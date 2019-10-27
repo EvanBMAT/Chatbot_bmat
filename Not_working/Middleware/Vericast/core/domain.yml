@@ -1,0 +1,229 @@
+%YAML 1.1
+---
+actions:
+- action_default_ask_affirmation
+- utter_AccessPreferences
+- utter_AccountSettingsAccessAPI
+- utter_AccountSettingsLanguage
+- utter_AccountSettingsOrderOfTracks0
+- utter_AccountSettingsOrderOfTracks1
+- utter_AccountSettingsTimezone
+- utter_AddingNewChannel
+- utter_DownloadReport
+- utter_ReplaceChannel
+- utter_TechnicalRequirements
+- utter_TechnologyAlgorithmFunctionning0
+- utter_TechnologyAlgorithmFunctionning1
+- utter_TypesOfAudioVideo
+- utter_UploadCatalogue
+- utter_UploadCatalogueFTP
+- utter_UploadCatalogueVericast
+- utter_WantToKnowMoreAboutAPI
+- utter_contactTheSupportTeam
+- utter_didThatHelp
+- utter_dontHesitate
+- utter_giveContactSupportTeam
+- utter_goodbye
+- utter_greet
+- utter_happyToHelp
+- utter_outOfScope
+- utter_somethingElse
+- utter_sorryDontUnderstand
+- utter_sorryToHearThat
+- utter_thankyou
+- utter_whatCanIdoForYou
+- utter_whatDoesMean
+config:
+  store_entities_as_slots: true
+entities: []
+forms: []
+intents:
+- out_of_scope:
+    use_entities: true
+- AccountSettingsLanguage:
+    use_entities: true
+- AccountSettingsAccessAPI:
+    use_entities: true
+- AccountSettingsTimezone:
+    use_entities: true
+- UploadCatalogue:
+    use_entities: true
+- UploadCatalogueFTP:
+    use_entities: true
+- UploadCatalogueVericast:
+    use_entities: true
+- AddingNewChannel:
+    use_entities: true
+- ReplaceChannel:
+    use_entities: true
+- TypesOfAudioVideo:
+    use_entities: true
+- AccountSettingsOrderOfTracks:
+    use_entities: true
+- WantToKnowMoreAboutAPI:
+    use_entities: true
+- AccessPreferences:
+    use_entities: true
+- TechnicalRequirements:
+    use_entities: true
+- DownloadReport:
+    use_entities: true
+- TechnologyAlgorithmFunctionning:
+    use_entities: true
+- whatDoesMean:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- whatCanIdoForYou:
+    use_entities: true
+- happyToHelp:
+    use_entities: true
+- sorryToHearThat:
+    use_entities: true
+- sorryDontUnderstand:
+    use_entities: true
+- dontHesitate:
+    use_entities: true
+- outOfScope:
+    use_entities: true
+- somethingElse:
+    use_entities: true
+- didThatHelp:
+    use_entities: true
+- contactTheSupportTeam:
+    use_entities: true
+- giveContactSupportTeam:
+    use_entities: true
+slots: {}
+templates:
+  utter_AccessPreferences:
+  - text: You can access your Vericast preferences in the menu located at the top
+      right corner of the page, you can find more information on setting up your preferences
+      [here](https://support.bmat.com/en/support/solutions/articles/29000017443-getting-started-welcome-to-vericast).
+  utter_AccountSettingsAccessAPI:
+  - text: You can access your API number in your preferences (top right corner), if
+      you want to know more about the possibilities it offers please take a look at
+      [this article](https://www.bmat.com/api-vericast/)
+  utter_AccountSettingsLanguage:
+  - text: You can change your displaying language in your settings (top right corner)
+  utter_AccountSettingsOrderOfTracks0:
+  - text: In your preferences you can choose the order your tracks appear in Vericast
+      between the play count or the impact.
+  utter_AccountSettingsOrderOfTracks1:
+  - text: Note that Impact sorting needs the Audiences service to be activated, more
+      information [here](https://support.bmat.com/en/support/solutions/articles/29000023862-account-settings-timezone-language-)
+  utter_AccountSettingsTimezone:
+  - text: You can access your timezone settings in your preferences menu (top right
+      corner)
+  utter_AddingNewChannel:
+  - text: you can find more information on how to add a radio or a television channel
+      [here](https://support.bmat.com/en/support/solutions/articles/29000011432-add-a-new-channel)
+  utter_DownloadReport:
+  - text: You’ll find [here](https://support.bmat.com/en/support/solutions/articles/29000023843-download-a-report)
+      the procedure on how to export your report.
+  utter_ReplaceChannel:
+  - text: The whole procedure on how to replace a channel can be found [here](https://support.bmat.com/en/support/solutions/articles/29000023850-replacing-a-channel)
+  utter_TechnicalRequirements:
+  - text: Vericast is compatible with all the latest versions of the most popular
+      browsers, a list of supported browsers can be found [here](https://support.bmat.com/en/support/solutions/articles/29000023837-technical-requirements)
+  utter_TechnologyAlgorithmFunctionning0:
+  - text: 'We match the audio samples we receive with our database using audio-fingerprinting
+      technology. An audio-fingerprint is a digital summary of a piece of audio based
+      on its characteristics. '
+  utter_TechnologyAlgorithmFunctionning1:
+  - text: You can find more information on our technology [here] (https://support.bmat.com/support/solutions/articles/29000023840-our-technology)
+  utter_TypesOfAudioVideo:
+  - text: 'TODO : To be implemented'
+  utter_UploadCatalogue:
+  - buttons:
+    - payload: /UploadCatalogueVericast
+      title: Less than 1000
+    - payload: /UploadCatalogueFTP
+      title: More than 1000
+    text: 'Two methods are available to upload your catalogue to our platform. Do
+      you wish to upload more than 1000 tracks ? (You can find more information [here](https://support.bmat.com/support/solutions/articles/29000018810-upload-music-to-our-database) '
+  utter_UploadCatalogueFTP:
+  - text: To upload more than 1000 tracks, you should use a FTP, you can find an explicative
+      video for this process [here](https://support.bmat.com/en/support/solutions/articles/29000004736-ftp-upload)
+  utter_UploadCatalogueVericast:
+  - text: ' If you wish to upload less than 1000 tracks, you can use the embedded
+      Vericast-Upload, you can find more information on this process [here](https://support.bmat.com/en/support/solutions/articles/29000023842-vericast-upload)'
+  utter_WantToKnowMoreAboutAPI:
+  - text: If you wish to know more about what functionalities our API offers, you
+      can visit this page [here](https://vericast.bmat.me/api)
+  utter_contactTheSupportTeam:
+  - buttons:
+    - payload: /giveContactSupportTeam
+      title: 'Yes'
+    - payload: /somethingElse
+      title: 'No'
+    text: Do you wish to contact the support team ?
+  utter_didThatHelp:
+  - buttons:
+    - payload: /happyToHelp
+      title: 'Yes'
+    - payload: /sorryToHearThat
+      title: 'No'
+    text: Did that help you ?
+  utter_dontHesitate:
+  - text: It was a pleasure to help you, I stay here in case you have any further
+      requests !
+  utter_giveContactSupportTeam:
+  - text: Okay, this part isn’t achieved yet, but we’re working on it
+  utter_goodbye:
+  - text: Have a nice day !
+  - text: Hope to see you soon !
+  - text: It was a pleasure to help you, goodbye !
+  utter_greet:
+  - text: Hi, I’m chatbot. Nice to meet you !
+  - text: Welcome, I’m chatbot !  Nice to meet you.
+  utter_happyToHelp:
+  - text: Happy to help !
+  - text: I am glad it helped you !
+  utter_outOfScope:
+  - text: Sorry, I am afraid I do not understand your request, can you try rephrasing
+      it ?
+  utter_somethingElse:
+  - buttons:
+    - payload: /whatCanIdoForYou
+      title: 'Yes'
+    - payload: /dontHesitate
+      title: 'No'
+    text: Do you need something else ?
+  - buttons:
+    - payload: /whatCanIdoForYou
+      title: 'Yes'
+    - payload: /dontHesitate
+      title: 'No'
+    text: Can I help you with anything else ?
+  - buttons:
+    - payload: /whatCanIdoForYou
+      title: 'Yes'
+    - payload: /dontHesitate
+      title: 'No'
+    text: Do you have any other question ?
+  - buttons:
+    - payload: /whatCanIdoForYou
+      title: 'Yes'
+    - payload: /dontHesitate
+      title: 'No'
+    text: Can I do something else for you ?
+  utter_sorryDontUnderstand:
+  - text: Sorry, I am not able to answer such a request
+  - text: I am sorry, I  haven’t the ability to answer this request
+  utter_sorryToHearThat:
+  - text: I am sorry I didn’t properly handle your request
+  - text: I am sorry the answer doesn’t suit you
+  utter_thankyou:
+  - text: My pleasure
+  - text: You’re very welcome
+  - text: You’re welcome
+  utter_whatCanIdoForYou:
+  - text: ' What can I do for you ?'
+  - text: How can I help you ?
+  utter_whatDoesMean:
+  - text: Vocabulary question detected

@@ -1,0 +1,413 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "AccountSettingsLanguage",
+        "text": "How can I change the language settings ?"
+      },
+      {
+        "intent": "AccountSettingsLanguage",
+        "text": "Change language ?"
+      },
+      {
+        "intent": "AccountSettingsLanguage",
+        "text": "Language ?"
+      },
+      {
+        "intent": "AccountSettingsLanguage",
+        "text": "Where to change language ?"
+      },
+      {
+        "intent": "AccountSettingsLanguage",
+        "text": "Want to change language settings"
+      },
+      {
+        "intent": "AccountSettingsAccessAPI",
+        "text": "Where can I find my API number ?"
+      },
+      {
+        "intent": "AccountSettingsAccessAPI",
+        "text": "API number"
+      },
+      {
+        "intent": "AccountSettingsAccessAPI",
+        "text": "find API number"
+      },
+      {
+        "intent": "AccountSettingsAccessAPI",
+        "text": "API"
+      },
+      {
+        "intent": "AccountSettingsAccessAPI",
+        "text": "Access API number"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "I want to change my timezone"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "change timezone ?"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "where change timezone ?"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "timezone settings ?"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "change time"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "change hour format"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "wrong hour"
+      },
+      {
+        "intent": "AccountSettingsTimezone",
+        "text": "wrong time"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "I wish to upload my catalogue to Vericast"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "import tracks"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "add titles"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "add tracks"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "add catalogue"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "I want to upload tracks"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "want to add tracks"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "upload catalogue"
+      },
+      {
+        "intent": "UploadCatalogue",
+        "text": "want to add tracks"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "I want to add a channel to Vericast"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "add a radio channel"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "add radio station"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "add station"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "add television"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "add tv channel"
+      },
+      {
+        "intent": "AddingNewChannel",
+        "text": "add program"
+      },
+      {
+        "intent": "ReplaceChannel",
+        "text": "I want to replace a channel"
+      },
+      {
+        "intent": "ReplaceChannel",
+        "text": "remove a channel"
+      },
+      {
+        "intent": "ReplaceChannel",
+        "text": "station replacement"
+      },
+      {
+        "intent": "ReplaceChannel",
+        "text": "change program"
+      },
+      {
+        "intent": "TypesOfAudioVideo",
+        "text": "What are the different types of media that can be recorded ?"
+      },
+      {
+        "intent": "TypesOfAudioVideo",
+        "text": "Types of recordings available"
+      },
+      {
+        "intent": "TypesOfAudioVideo",
+        "text": "IPTV"
+      },
+      {
+        "intent": "TypesOfAudioVideo",
+        "text": "online emission"
+      },
+      {
+        "intent": "TypesOfAudioVideo",
+        "text": "recording unit"
+      },
+      {
+        "intent": "AccountSettingsOrderOfTracks",
+        "text": "I want to change my tracks sorting"
+      },
+      {
+        "intent": "AccountSettingsOrderOfTracks",
+        "text": "change sort of tracks"
+      },
+      {
+        "intent": "AccountSettingsOrderOfTracks",
+        "text": "sorting of tracks"
+      },
+      {
+        "intent": "AccountSettingsOrderOfTracks",
+        "text": "where modify sorting of tracks"
+      },
+      {
+        "intent": "AccountSettingsOrderOfTracks",
+        "text": "modify order of tracklist"
+      },
+      {
+        "intent": "AccountSettingsOrderOfTracks",
+        "text": "sort tracks"
+      },
+      {
+        "intent": "WantToKnowMoreAboutAPI",
+        "text": "I want to know more about API functionalities"
+      },
+      {
+        "intent": "WantToKnowMoreAboutAPI",
+        "text": "Introduction to API"
+      },
+      {
+        "intent": "WantToKnowMoreAboutAPI",
+        "text": "What can I do with my API number ?"
+      },
+      {
+        "intent": "WantToKnowMoreAboutAPI",
+        "text": "What are the use of an API ?"
+      },
+      {
+        "intent": "WantToKnowMoreAboutAPI",
+        "text": "Information on API"
+      },
+      {
+        "intent": "WantToKnowMoreAboutAPI",
+        "text": "API"
+      },
+      {
+        "intent": "AccessPreferences",
+        "text": "Where can I access my Vericast preferences ?"
+      },
+      {
+        "intent": "AccessPreferences",
+        "text": "Vericast preferences"
+      },
+      {
+        "intent": "AccessPreferences",
+        "text": "Settings platform"
+      },
+      {
+        "intent": "TechnicalRequirements",
+        "text": "Which Browser is compatible with Vericast"
+      },
+      {
+        "intent": "TechnicalRequirements",
+        "text": "What platforms does Vericast can run on ?"
+      },
+      {
+        "intent": "TechnicalRequirements",
+        "text": "List of supported browsers ?"
+      },
+      {
+        "intent": "DownloadReport",
+        "text": "How can I download/export my report ?"
+      },
+      {
+        "intent": "DownloadReport",
+        "text": "Export report to .csv"
+      },
+      {
+        "intent": "DownloadReport",
+        "text": "Excel file export"
+      },
+      {
+        "intent": "DownloadReport",
+        "text": "Email my report"
+      },
+      {
+        "intent": "TechnologyAlgorithmFunctionning",
+        "text": "How does our fingerprinting technology work ?"
+      },
+      {
+        "intent": "TechnologyAlgorithmFunctionning",
+        "text": "How do you recognise songs ?"
+      },
+      {
+        "intent": "TechnologyAlgorithmFunctionning",
+        "text": "What algorithms do you use ?"
+      },
+      {
+        "intent": "TechnologyAlgorithmFunctionning",
+        "text": "Functioning of detection"
+      },
+      {
+        "intent": "TechnologyAlgorithmFunctionning",
+        "text": "How do you match audio ?"
+      },
+      {
+        "intent": "whatDoesMean",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "ISRC",
+            "entity": "vocab"
+          }
+        ],
+        "text": "What does ISRC means ?"
+      },
+      {
+        "intent": "whatDoesMean",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "FCF",
+            "entity": "vocab"
+          }
+        ],
+        "text": "Meaning of FCF ?"
+      },
+      {
+        "intent": "whatDoesMean",
+        "entities": [
+          {
+            "start": 26,
+            "end": 29,
+            "value": "WUI",
+            "entity": "vocab"
+          }
+        ],
+        "text": "What is the definition of WUI ?"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "ciao"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you"
+      },
+      {
+        "intent": "thankyou",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thankyou",
+        "text": "Thks"
+      },
+      {
+        "intent": "thankyou",
+        "text": "Thx"
+      },
+      {
+        "intent": "contactTheSupportTeam",
+        "text": "I want to contact the support team"
+      },
+      {
+        "intent": "contactTheSupportTeam",
+        "text": "I need to get in touch with the support team"
+      },
+      {
+        "intent": "contactTheSupportTeam",
+        "text": "Contact support team"
+      },
+      {
+        "intent": "contactTheSupportTeam",
+        "text": "contact real person"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [
+      {
+        "name": "vocab",
+        "elements": [
+          "Ad",
+          "Airplay",
+          "API",
+          "api",
+          "ad",
+          "airplay",
+          "FCF",
+          "fcf",
+          "ISRC",
+          "isrc"
+        ]
+      }
+    ],
+    "entity_synonyms": []
+  }
+}

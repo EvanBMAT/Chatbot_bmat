@@ -1,0 +1,6 @@
+[
+    {
+        "name": "vocab",
+        "pattern": "(?i)(\\bAd\\b|\\bAirplay\\b|\\bAPI\\b|\\bapi\\b|\\bad\\b|\\bairplay\\b|\\bFCF\\b|\\bfcf\\b|\\bISRC\\b|\\bisrc\\b)"
+    }
+]

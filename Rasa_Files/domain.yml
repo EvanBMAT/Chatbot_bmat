@@ -1,0 +1,145 @@
+%YAML 1.1
+---
+actions:
+- action_default_ask_affirmation
+- action_default_ask_rephrase
+- utter_AccountSettingsLanguage
+- utter_AccountSettingsAccessAPI
+- utter_AccountSettingsTimezone
+- utter_UploadCatalogue
+- utter_UploadCatalogueFTP
+- utter_UploadCatalogueVericast
+- utter_AddingNewChannel
+- utter_AccountSettingsOrderOfTracks0
+- utter_AccountSettingsOrderOfTracks1
+- utter_WantToKnowMoreAboutAPI
+- utter_greet
+- utter_goodbye
+- utter_thankyou
+- utter_whatCanIdoForYou
+- utter_happyToHelp
+- utter_sorryToHearThat
+- utter_sorryDontUnderstand
+- utter_dontHesitate
+- utter_outOfScope
+- utter_somethingElse
+- utter_didThatHelp
+- utter_contactTheSupportTeam
+- utter_giveContactSupportTeam
+intents:
+- AccountSettingsLanguage
+- AccountSettingsAccessAPI
+- AccountSettingsTimezone
+- UploadCatalogue
+- UploadCatalogueFTP
+- UploadCatalogueVericast
+- AddingNewChannel
+- AccountSettingsOrderOfTracks
+- WantToKnowMoreAboutAPI
+- greet
+- goodbye
+- thankyou
+- whatCanIdoForYou
+- happyToHelp
+- sorryToHearThat
+- sorryDontUnderstand
+- dontHesitate
+- out_of_scope
+- somethingElse
+- didThatHelp
+- contactTheSupportTeam
+- giveContactSupportTeam
+templates:
+  utter_AccountSettingsLanguage:
+  - text: "You can change your displaying language in your settings (top right corner)"
+  utter_AccountSettingsAccessAPI:
+  - text: "You can access your API number in your preferences (top right corner), if you want to know more about the possibilities it offers please take a look at [this article](https://www.bmat.com/api-vericast/)"
+  utter_AccountSettingsTimezone:
+  - text: "You can access your timezone settings in your preferences menu (top right corner)"
+  utter_UploadCatalogue:
+  - text: "Do you wish to upload more than or less than 1000 tracks ?"
+    buttons:
+    - title: Less than 1000
+      payload: /UploadCatalogueVericast
+    - title: More than 1000
+      payload: /UploadCatalogueFTP
+  utter_UploadCatalogueFTP:
+  - text: "To upload more than 1000 tracks, you should use a FTP, you can find an explicative video for this process [here](https://support.bmat.com/support/solutions/articles/29000018810-upload-music-to-our-database)"
+  utter_UploadCatalogueVericast:
+  - text: " If you wish to upload less than 1000 tracks, you can use the embedded Vericast-Upload, you can find more information on this process [here](https://support.bmat.com/support/solutions/articles/29000018810-upload-music-to-our-database)"
+  utter_AddingNewChannel:
+  - text: "you can find more information on how to add a radio or a television channel [here](https://support.bmat.com/en/support/solutions/articles/29000011432-add-a-new-channel)"
+  utter_AccountSettingsOrderOfTracks0:
+  - text: "In your preferences you can choose the order your tracks appear in Vericast between the play count or the impact."
+  utter_AccountSettingsOrderOfTracks1:
+  - text: "Note that Impact needs the Audiences service to be activated, more information [here](https://support.bmat.com/en/support/solutions/articles/29000023862-account-settings-timezone-language-)"
+  utter_WantToKnowMoreAboutAPI:
+  - text: "If you wish to know more about what functionalities our API offers, you can visit this page [here](https://vericast.bmat.me/api)"
+  utter_greet:
+  - text: "Hi, I’m chatbot. <br/> Nice to meet you !"
+  - text: "Welcome, I’m chatbot ! <br/> Nice to meet you."
+  utter_goodbye:
+  - text: "Have a nice day !"
+  - text: "Hope to see you soon !"
+  - text: "It was a pleasure to help you, goodbye !"
+  utter_thankyou:
+  - text: "My pleasure"
+  - text: "You’re very welcome"
+  - text: "You’re welcome"
+  utter_whatCanIdoForYou:
+  - text: " What can I do for you ?"
+  - text: "How can I help you ?"
+  utter_happyToHelp:
+  - text: "Happy to help !"
+  - text: "I am glad it helped you !"
+  utter_sorryToHearThat:
+  - text: "I am sorry I didn’t properly handle your request"
+  - text: "I am sorry the answer doesn’t suit you"
+  utter_sorryDontUnderstand:
+  - text: "Sorry, I am not able to answer such a request"
+  - text: "I am sorry, I  haven’t the ability to answer this request"
+  utter_dontHesitate:
+  - text: "It was a pleasure to help you, I stay here in case you have any further requests !"
+  utter_somethingElse:
+  - text: "Do you need something else ?"
+    buttons:
+    - title: Yes
+      payload: /whatCanIdoForYou
+    - title: No
+      payload: /dontHesitate
+  - text: "Can I help you with anything else ?"
+    buttons:
+    - title: Yes
+      payload: /whatCanIdoForYou
+    - title: No
+      payload: /dontHesitate
+  - text: "Do you have any other questions ?"
+    buttons:
+    - title: Yes
+      payload: /whatCanIdoForYou
+    - title: No
+      payload: /dontHesitate
+  - text: "Can I do something else for you ?"
+    buttons:
+    - title: Yes
+      payload: /whatCanIdoForYou
+    - title: No
+      payload: /dontHesitate
+  utter_didThatHelp:
+  - text: "Did that help you ?"
+    buttons:
+    - title: Yes
+      payload: /happyToHelp
+    - title: No
+      payload: /sorryToHearThat
+  utter_contactTheSupportTeam:
+  - text: "Do you wish to contact the support team ?"
+    buttons:
+    - title: Yes
+      payload: /giveContactSupportTeam
+    - title: No
+      payload: /somethingElse
+  utter_giveContactSupportTeam:
+  - text: "Okay, this part isn’t achieved yet, but we’re working on it"
+  utter_outOfScope:
+  - text: "Sorry, I am afraid I do not understand your request, can you rephrase it ?"

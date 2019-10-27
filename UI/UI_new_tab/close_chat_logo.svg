@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Chat-Widget" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-927.000000, -991.000000)" id="Group-6-Copy-6" fill="#FFFFFF">
+            <g transform="translate(900.277344, 962.000000)">
+                <g id="icon_close_dark_large" transform="translate(27.000000, 29.000000)">
+                    <path d="M10.6270282,9.01348172 L17.4994398,15.8858934 L18.2065466,16.5930001 L16.792333,18.0072137 L16.0852262,17.3001069 L9.21281459,10.4276953 L2.34040294,17.3001069 L1.63329616,18.0072137 L0.219082598,16.5930001 L0.926189379,15.8858934 L7.79860103,9.01348172 L0.945722706,2.1606034 L0.238615925,1.45349662 L1.65282949,0.0392830567 L2.35993627,0.746389838 L9.21281459,7.59926816 L16.0656929,0.746389838 L16.7727997,0.0392830567 L18.1870133,1.45349662 L17.4799065,2.1606034 L10.6270282,9.01348172 Z" id="Combined-Shape"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

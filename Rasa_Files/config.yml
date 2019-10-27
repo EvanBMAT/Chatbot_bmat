@@ -1,0 +1,21 @@
+%YAML 1.1
+---
+language: en
+pipeline:
+- name: "SpacyNLP"
+- name: "SpacyTokenizer"
+- name: "SpacyFeaturizer"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "SklearnIntentClassifier"
+policies:
+- name: MemoizationPolicy
+- name: KerasPolicy
+- name: MappingPolicy
+- name: TwoStageFallbackPolicy
+  fallback_core_action_name: "action_default_ask_affirmation"
+  fallback_nlu_action_name: "action_default_ask_affirmation"
+  deny_suggestion_intent_name: "out_of_scope"
+  nlu_threshold: 0.20
+  core_threshold: 0.20

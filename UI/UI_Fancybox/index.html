@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMAT Chatbot</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./fancybox-masterV3/jquery-3.3.1.min.js"></script>
+<script src="./fancybox-masterV3/fancybox-master/dist/jquery.fancybox.js"></script>
+<link rel="stylesheet" href="./fancybox-masterV3/fancybox-master/dist/jquery.fancybox.min.css" />
+<script>
+$().fancybox({
+    selector : '.messages-container a:visible',
+    toolbar  : false,
+	smallBtn : true,
+	iframe : {
+		preload : false
+	}
+});
+
+</script>
+<body>
+<div class="layout-3col-header__user-data-username">
+    <i class="bm-icon-customer"></i>
+    ChatbotV1
+</div>
+<div id="webchat"/>
+<script src="Webchat_fancyV3.js"></script>
+<script>
+
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "/greet",
+    interval: 1000, // 1000 ms between each messages
+    customData: {"userName": "user1"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    title: "BMAT 🤖",
+    subtitle: '"Help ! I need somebody Help ! ♫"',
+    inputTextFieldHint: "Type a message...",
+    connectingText: "Waiting for server...",
+    hideWhenNotConnected: true,
+    fullScreenMode: false,
+    profileAvatar: "logo.jpg",
+    openLauncherImage: 'open_chat_logo.svg',
+    closeLauncherImage: 'close_chat_logo.svg',
+    params: {
+      images: {
+        dims: {
+          width: 300,
+          height: 200,
+        }
+      },
+      storage: "local" <!-- set to "session" for persistence-->
+    }
+  })
+</script>
+
+<a data_fancybox href="https://support.bmat.com/en/support/home">
+	BMAT support portal page
+</a>
+<h3>Available questions :</h3>
+<p>Most questions related to the FAQ articles have been implemented, </br> Here are sample questions the chatbot can answer: </p>
+</br>
+<ol>
+	<li>How can I change the language settings ?</li></br>
+	<li>Where can I find my API number ?</li></br>
+	<li>I want to change my timezone</li></br>
+	<li>I wish to upload my catalogue to Vericast</li></br>
+	<li>I want to add a channel to Vericast</li></br>
+	<li>I want to replace a channel</li></br>
+	<li>What are the different types of media that can be recorded ?</li></br>
+	<li>I want to change my tracks sorting</li></br>
+	<li>I want to know more about API functionalities</li></br>
+	<li>Where can I access my Vericast preferences ?</li></br>
+	<li>Which Browser is compatible with Vericast</li></br>
+	<li>How can I download/export my report ?</li></br>
+	<li>How does our fingerprinting technology work ?</li></br>
+	<li>How to filter by media type</li></br>
+	<li>How to filter by duration</li></br>
+	<li>I want to contact the support team</li></br>
+	<li>Tracks are not available after upload</li></br>
+	<li>How should I read my report</li></br>
+	<li>What is Bmatid ?</li></br>
+	<li>Where can I access all my reports ?</li></br>
+	<li>An artist name or a title seems incorrect</li></br>
+	<li>I want to subscribe to the charts service</li></br>
+	<li>A track has a no label information</li></br>
+	<li>Track has an incorrect label</li></br>
+	<li>A track is missing in the report</li></br>
+	<li>The database contains twice the same track with different names</li></br>
+	<li>I want to update a label name</li></br>
+	<li>Recordings are missing for a channel</li></br>
+	<li>What is FCF ?</li></br>
+	<li>How to edit FCF found tracks</li></br>
+	<li>How to monitor songs in bars</li></br>
+</ol>
+</br>
+<p>Sometimes he will say he's not sure what you ask whereas the reformulating suggestion is really close to your question...</br> I need to tweak some parameters to solve that.</br> </p>
+<p>Any suggestion is more than welcome, <a href="mailto:edufraisse@bmat.com?subject=Suggestions%20Chatbot">contact here</a></p></br>
+</body>
+
+</html>
